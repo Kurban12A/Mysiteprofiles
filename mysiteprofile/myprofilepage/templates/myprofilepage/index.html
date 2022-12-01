@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>PythonDev</title>
+    <link href="static/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom Theme files -->
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!--webfont-->
+    <link href='//fonts.googleapis.com/css?family=Maven+Pro:400,700,500,900' rel='stylesheet' type='text/css'>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/move-top.js"></script>
+    <script type="text/javascript" src="static/js/easing.js"></script>
+    <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+
+    </script>
+</head>
+<body>
+<!-- header-section-starts -->
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="static/images/logo.jpg" class="img-responsive" alt=""/></a>
+<!--                <a href=""><span class="bold block"></span></a>-->
+            </div>
+            <div class="top-menu">
+                <span class="menu"> </span>
+                <ul>
+                    <li><a href="#aboutus" class="scroll">About Me</a></li>
+                    <li><a href="#work" class="scroll">Work</a></li>
+<!--                    <li><a href="#clients" class="scroll">Clients</a></li>-->
+                    <li><a href="#contact" class="scroll">Contact me</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+            <!-- script-for-menu -->
+            <script>
+			$("span.menu").click(function(){
+				$(".top-menu ul").slideToggle("slow" , function(){
+				});
+			});
+
+            </script>
+            <!-- script-for-menu -->
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="index-banner">
+        <div class="container">
+            <div class="wmuSlider example1">
+                <div class="wmuSliderWrapper">
+                    <article style="position: absolute; width: 100%; opacity: 0;">
+                        <div class="banner-wrap">
+                            <div class="bannertop_box">
+                                <h1>HI, All<span>I'M Kurban Tsmikhanov</span></h1>
+<!--                                <label>Python Developer</label>-->
+                                <p>I am a Python developer from Armenia and this is my portfolio website.</p>
+                                <p>Click right and you'll find out who I worked for before I became a Python developer  →</p>
+                                <p><span
+                                        class="bold block"></span></p>
+                            </div>
+
+                            <div class="banner_right">
+                                <img src="static/images/slider-img2.jpg" class="img-responsive" alt=""/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </article>
+                    <article style="position: relative; width: 100%; opacity: 1;">
+                        <div class="banner-wrap">
+                            <div class="bannertop_box">
+                                <h1><span></span></h1>
+                                <label></label>
+                                <p>I worked as a business and system analyst and I know how to properly build the process of developing web applications and software products, now this knowledge helps me to develop web applications independently.</p>
+                                <p></p>
+                                <p><span class="bold"></span><span
+                                        class="bold block"></span></p>
+                            </div>
+
+                            <div class="banner_right">
+                                <img src="static/images/slider-img1.jpg" class="img-responsive" alt=""/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </article>
+                    <article style="position: absolute; width: 100%; opacity: 0;">
+                        <div class="banner-wrap">
+                            <div class="bannertop_box">
+                                <h1><span></span></h1>
+                                <label></label>
+                                <p>Here you can view and evaluate my work, contact me by mail for suggestions, orders and cooperation.</p>
+                                <p>I will be glad of your assessments and feedback, for me this is a step forward to improving my knowledge and abilities.</p>
+                                <p><span
+                                        class="bold block">Thank you</span></p>
+                            </div>
+
+                            <div class="banner_right">
+                                <img src="static/images/slider-img.jpg" class="img-responsive" alt=""/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </article>
+                </div>
+                <a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
+                <ul class="wmuSliderPagination">
+                    <li><a href="#" class="">0</a></li>
+                    <li><a href="#" class="">1</a></li>
+                    <li><a href="#" class="wmuActive">2</a></li>
+                </ul>
+            </div>
+            <script src="static/js/jquery.wmuSlider.js"></script>
+            <script>
+       			$('.example1').wmuSlider();         
+
+            </script>
+        </div>
+    </div>
+</div>
+<!-- header-section-ends -->
+<!-- content-starts -->
+<div class="content">
+    <!-- about-section-starts -->
+    <div class="about-section" id="aboutus">
+        <div class="about-section-head text-center">
+            <div class="container">
+                <h3>ABOUT ME</h3>
+                <p>--------------------------------------------------------------</p>
+                <p><span class="tm-info-label">Name:</span> Kurban Tsmikhanov</p>
+<!--                <p><span class="tm-info-label">Birthday:</span> December 20, 1990</p>-->
+                <p><span class="tm-info-label">Address:</span> Yerevan Armenia</p>
+                <p><span class="tm-info-label">Phone:</span> +374 200 157 41</p>
+                <p><span class="tm-info-label">Email:</span> kurbanpydev@mail.ru</p>
+<!--                <p><span class="tm-info-label">Website:</span> <a href="#" class="tm-red-text">www.company.com</a></p>-->
+            </div>
+        </div>
+        <div class="about-section-grids">
+            <div class="about-section-top-grid">
+                <div class="container">
+                    <div class="col-md-3 about-section-top-left-grid">
+                        <h4>Software</h4>
+                    </div>
+                    <div class="col-md-9 about-section-top-right-grid">
+                        <p>Python | Django | JS | HTML | SQL | Ps | Figma </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="about-section-middle-grid">
+                <div class="container">
+                    <div class="col-md-3 about-section-middle-left-grid">
+                        <h4>Skills</h4>
+                    </div>
+                    <div class="col-md-9 about-section-middle-right-grid">
+                        <p>Conceptual thinking | Web | Analytical thinking | Identity | Team work </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="about-section-bottom-grid">
+                <div class="container">
+                    <div class="col-md-3 about-section-bottom-left-grid">
+                        <h4>Hobby</h4>
+                    </div>
+                    <div class="col-md-9 about-section-bottom-right-grid">
+                        <p>Sport | Serials | Travelling | Reading books </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about-section-ends -->
+    <!-- work-section-starts -->
+    <div class="work-section" id="work">
+        <div class="container">
+            <div class="work-section-head text-center">
+                <h3>WORK</h3>
+            </div>
+            <div id="portfoliolist">
+                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox">
+                            <img src="static/images/pic3.svg" class="img-responsive" alt=""/>
+                        </a>
+                        <p style="text-align:center"><font face="Times New Roman" color="#66635E" size="5">Web scraping</font></p>
+                        <div class="lightbox-target" id="goofy">
+                            <img src="static/images/pic3.svg" class="img-responsive" alt=""/>
+                            <a class="lightbox-close" href="#"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="portfolio app mix_all" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="https://github.com/Kurban12A/My_Project_Shop" target="_blank">
+                            <img src="static/images/pic2.svg" class="img-responsive" alt=""/>
+                        </a>
+                        <p style="text-align:center"><font face="Times New Roman" color="#66635E" size="5">Web site</font></p>
+                    </div>
+                </div>
+                <div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="https://t.me/Kurban_BA" target="_blank">
+                            <img src="static/images/pic7.svg" class="img-responsive" alt=""/>
+                        </a>
+                        <p style="text-align:center"><font face="Times New Roman" color="#66635E" size="5">TelegramBot</font></p>
+                    </div>
+                </div>
+                <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="#">
+<!--                            <img src="static/images/pic4.jpg" class="img-responsive" alt=""/>-->
+<!--                            <div class="b-wrapper">-->
+<!--                            </div>-->
+                        </a>
+                    </div>
+
+                </div>
+                <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="#goofy">
+<!--                            <img src="static/images/pic5.jpg" class="img-responsive" alt=""/>-->
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="#goofy">
+<!--                            <img src="static/images/pic6.jpg" class="img-responsive" alt=""/>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="#">
+<!--                            <img src="static/images/pic7.jpg" class="img-responsive" alt=""/>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="#goofy">
+<!--                            <img src="static/images/pic8.jpg" class="img-responsive" alt=""/>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio icon mix_all" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper">
+                        <a class="lightbox" href="#goofy">
+<!--                            <img src="static/images/pic9.jpg" class="img-responsive" alt=""/>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+<!--            <span class="more">MORE ON <a href="#">BEHANCE</a></span>-->
+
+        </div>
+    </div>
+    <!-- script-for-portfolio -->
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+
+    </script>
+    <!-- work-section-ends -->
+    <!-- clients-section-starts -->
+<!--    <div class="clients-section" id="clients">-->
+<!--        <div class="container">-->
+<!--            <div class="clients-section-head text-center">-->
+<!--                <h3>CLIENTS</h3>-->
+<!--            </div>-->
+<!--            <div class="clients-section-grids text-center">-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client1.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client2.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client3.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="clearfix"></div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client2.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client3.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client1.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="clearfix"></div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client3.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client1.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="col-md-4 client-section-grid">-->
+<!--                    <img src="static/images/client2.png" alt=""/>-->
+<!--                </div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- clients-section-ends -->
+</div>
+<!-- contact-section-starts -->
+<div class="contact-section" id="contact">
+    <div class="container">
+        <div class="contact-section-head text-center">
+            <h3>GET IN TOUCH</h3>
+        </div>
+        <div class="comments-area">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <p>
+                    <label>NAME</label>
+                    {{ form.name }}
+<!--                    <input type="text" value="">-->
+                </p>
+                <p>
+                    <label>EMAIL</label>
+                    {{ form.email }}
+<!--                    <input type="email" value="">-->
+                </p>
+                <p>
+                    <label>SUBJECT</label>
+                    {{ form.subjects }}
+<!--                    <input type="email" value="">-->
+                </p>
+                <p>
+                    <label>MESSAGE</label>
+                    {{form.messages }}
+<!--                    <textarea></textarea>-->
+                </p>
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/kurbanman/" target="_blank"><i class="behance-icon"></i></a>
+            <a href="https://vk.com/id49420274" target="_blank"><i class="dribble-icon"></i></a>
+<!--            <a href="#"><i class="linkein-icon"></i></a>-->
+            <a href="https://t.me/Kurban_BA" target="_blank"><i class="vimeo-icon"></i></a>
+            <a href="https://join.skype.com/invite/NNjkX3kzm5kE" target="_blank"><i class="twitter-icon"></i></a>
+<!--            <a href="#"><i class="facebook-icon"></i></a>-->
+<!--            <a href="#"><i class="skype-icon"></i></a>-->
+        </div>
+    </div>
+</div>
+<!-- contact-section-ends -->
+<!-- content-ends -->
+<!-- footer-->
+<!--<div class="footer">-->
+<!--    <div class="container">-->
+<!--        <div class="copyright">-->
+<!--&lt;!&ndash;            <p> &copy; 2014 OnePagePortfolio. All rights reserved | Template by <a href="http://w3layouts.com/">W3layouts</a>&ndash;&gt;-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- footer-->
+<script type="text/javascript">
+						$(document).ready(function() {
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
